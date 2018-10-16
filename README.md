@@ -10,3 +10,10 @@ To run just go to the project root folder and run the follow command.
 
 > docker-compose up
 
+#Migrations
+### Create
+> dotnet ef migrations add InitialCreate --startup-project ../Todo.UI.Web/
+
+### Update
+> dotnet ef database update InitialCreate --startup-project ../Todo.UI.Web/
+
